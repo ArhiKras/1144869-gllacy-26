@@ -25,9 +25,9 @@
           <li><a href="#">О компании</a></li>
         </ul>
         <p>
-          <button type="button">Найти</button>
-          <a href="lohin.html">Вход</button> <!-- Заменил на ссылку, на случай, если js не сработает -->
-          <button type="button">Корзина</button>
+          <a href="find.html">Найти</a>
+          <a href="login.html">Вход</a>
+          <a href="basket.html">Корзина</a>
         </p>
       </nav>
       <p>
@@ -43,14 +43,75 @@
         <li>Сливочное</li>
       </ul>
       <section>
-        <h2 class="visually-hidden">Фильтр товаров</h2> <!-- В интересах доступности. Cкрыть в CSS -->
-        <!-- Форма -->
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset style="width: 15%"> <!-- style добавил для удобства, уберу потом -->
+            <legend>Сортировка:</legend>
+            <select name="sorting">
+              <option value="popular" selected>по популярности</option>
+              <option value="down">сначала недорогие</option>
+              <option value="up">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </fieldset>
+          <fieldset style="width: 15%"> <!-- style добавил для удобства, уберу потом -->
+            <legend>Цена: 100 руб. - 500 руб.</legend>
+            <input type="range" min="100" max="500" step="50"> <!-- Как делать два ползунка пока не знаю -->
+          </fieldset>
+          <fieldset style="width: 15%"> <!-- style добавил для удобства, уберу потом -->
+            <legend>Жирность:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="fat-group" id="filter-0">
+                <label for="filter-0">0%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat-group" id="filter-10-down" checked>
+                <label for="filter-10-down">до 10%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat-group" id="filter-30-down">
+                <label for="filter-30-down">до 30%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat-group" id="filter-30-up">
+                <label for="filter-30-up">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset style="width: 15%"> <!-- style добавил для удобства, уберу потом -->
+            <legend>Наполнители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                <label for="filter-chocolate">шоколадные</label>
+              </li>
+              <li>
+                <input type="checkbox" name="sugar" id="filter-sugar" checked>
+                <label for="filter-sugar">сахарные присыпки</label>
+              </li>
+              <li>
+                <input type="checkbox" name="fruit" id="filter-fruit">
+                <label for="filter-fruit">фрукты</label>
+              </li>
+              <li>
+                <input type="checkbox" name="syrup" id="filter-syrup">
+                <label for="filter-sirup">сиропы</label>
+              </li>
+              <li>
+                <input type="checkbox" name="jam" id="filter-jam">
+                <label for="filter-jam">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Применить</button>
+        </form>
       </section>
       <section>
           <h2 class="visually-hidden">Каталог</h2> <!-- Доступность -->
           <ul>
             <li>
-              <a href="#"> <!-- Сказали обернуть <h3> и <img> в ссылку-->
+              <a href="#">
                 <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                 <p>
                   <img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -213,8 +274,29 @@
 
     <!-- pop-up -->
 
-        <section>
+    <section>
       <h2 class="visually-hidden">Корзина</h2> <!-- Доступность -->
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/product-1-small.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <p>Пломбир с апельсиновым джемом</p>
+          </a>
+          <p>1,5 кг х <span>200 руб.</span></p>
+          <p>300 руб.</p>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/product-3-small.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p>Клубничный пломбир с присыпкой из белого шоколада</p>
+          </a>
+          <p>1,5 кг х <span>300 руб.</span></p>
+          <p>450 руб.</p>
+        </li>
+      </ul>
+      <p>
+        <span>Итого: 750 руб.</span>
+      </p>
       <button type="submit">Оформить заказ</button>
     </section>
 
