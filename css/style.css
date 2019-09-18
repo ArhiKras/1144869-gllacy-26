@@ -1,0 +1,545 @@
+body {
+  /* Блочная модель */
+  margin: 0;
+  padding:0;
+  /* Типографика */
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  /* Оформление */
+  background: #849d8f url("../img/main-background-1") no-repeat 0 0;
+}
+
+.visually-hidden {
+  /* Позиционирование */
+  position: absolute;
+  /* Блочная модель */
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  /* Типографика */
+  overflow: hidden;
+  /* Оформление */
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+a {
+  /* Типографика */
+  text-decoration: none;
+}
+
+.btn {
+  /* Типографика */
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  /* Оформление */
+  background-color: #ed5a3d; /* будет градиент, пока так */
+  border: none;
+  box-shadow: 0 2px 5px -1px #a44434; /* времянка */
+}
+
+.main-btn {
+  /* Типографика */
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.filter-btn {
+  /* Типографика */
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  /* Оформление */
+  background-color: #9cb0a4;
+}
+
+.btn:hover,
+.btn:focus {
+  /* Типографика */
+  color: #fefefe;
+  /* Оформление */
+  background-color: #f17d64; /* будет градиент, пока так */
+  box-shadow: 0 3px 5px -1px #b11909; /* времянка */
+}
+
+.btn:active,
+.btn:active {
+  /* Типографика */
+  color: #fceeec;
+  /* Оформление */
+  background-color: #ed5a3d; /* будет градиент, пока так */
+  box-shadow: inset 0 3px 5px -1px #99291a; /* времянка */
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  /* Типографика */
+  color: #323232;
+  /* Оформление */
+  background-color: #ffffff;
+}
+
+.filter-btn:active,
+.filter-btn:active {
+  /* Типографика */
+  color: #323232;
+  /* Оформление */
+  background-color: #ffffff; /* будет градиент, пока так */
+  box-shadow: inset 0 3px 5px -1px #696969; /* времянка */
+}
+
+.underline-white-light {
+  /* Типографика */
+  text-decoration: underline rgba(255, 255, 255, 0.3);
+}
+
+.underline-red-light a:hover,
+.underline-red-light a:focus {
+  /* Типографика */
+  color: #ffbc9e;
+  text-decoration-color: rgba(255, 188, 158, 0.3);
+}
+
+.main-navigation {
+  /* Типографика */
+  font: inherit;
+}
+
+.site-navigation,
+.site-navigation-dropdown,
+.user-navigation {
+  /* Типографика */
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  /* Типографика */
+  color: #ffffff;
+}
+
+.user-navigation a {
+  /* Типографика */
+  font-weight: 500;
+  /* Оформление */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  /* Типографика */
+  color: #323232;
+  /* Оформление */
+  background-color: #f8f7f4;
+
+}
+
+.meta-header-time {
+  /* Типографика */
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.meta-header-phone {
+  /* Типографика */
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.carousel-list {
+  /* Типографика */
+  list-style: none;
+}
+
+.carousel p {
+  /* Типографика */
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.promo-item h3 {
+  /* Типографика */
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.promo-item p {
+  /* Типографика */
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.raspberry-item {
+  /* Оформление */
+  background:  #849d8f url("../img/raspberries.jpg") no-repeat 0 0;
+}
+
+.chocolate-item {
+  /* Оформление */
+  background: #849d8f url("../img/chocolate.jpg") no-repeat 0 0;
+}
+
+.catalog-list {
+  /* Типографика */
+  list-style: none;
+}
+
+.catalog-item a {
+  /* Типографика */
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.catalog-item-price b {
+  /* Типографика */
+  font-size: 45px;
+  line-height: 13px;
+}
+
+.catalog-item-price span {
+  /* Типографика */
+  font-size: 30px;
+  line-height: 13px;
+  text-decoration: none;
+}
+
+.features {
+  /* Типографика */
+  color: #323232;
+  /* Оформление */
+  background: #849d8f url("../img/waffle-big.png") no-repeat 0 0;
+}
+
+.features-list {
+  /* Типографика */
+  list-style: none;
+}
+
+.features-title {
+  /* Типографика */
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.features-item {
+  /* Типографика */
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.preview {
+  /* Типографика */
+  color: #323232;
+  background:  #849d8f url("../img/strawberry.jpg") no-repeat 0 0;
+
+}
+
+.preview-title {
+  /* Типографика */
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.preview a {
+  /* Типографика */
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+  text-decoration: underline #353535;
+}
+
+.preview a:hover,
+.preview a:focus {
+  /* Типографика */
+  color: #e84d37;
+  text-decoration: underline #facdc5;
+}
+
+.modal-subscribe {
+  /* Оформление */
+  color: #323232;
+  background-color: #849d8f;
+  background-image: url("../img/sub-post.png"),
+                    url("../img/post.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal-subscribe p {
+  /* Типографика */
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+
+.subscribe-form input {
+  /* Оформление */
+  background-color: #ffffff;
+  border: 1px solid #d7d7d7;
+}
+
+
+.modal-map-columns {
+  /* Оформление */
+  background-color: #fefefe;
+  background-repeat: repeat;
+  background-position: 0 0;
+}
+
+.modal-map-contacts {
+  /* Типографика */
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.modal-map-contacts span {
+  /* Типографика */
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.page-title {
+  /* Типографика */
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.breadcrumbs {
+  /* Типографика */
+  list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current  {
+  /* Типографика */
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.filter fieldset {
+  /* Оформление */
+  border: none;
+}
+
+.filter legend {
+  /* Типографика */
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.filter ul {
+  /* Типографика */
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  list-style: none;
+}
+
+.filter-option {
+  /* Оформление */
+  background-color: #a9b9b0;
+}
+
+.pagination-list {
+  /* Типографика */
+  list-style: none;
+}
+
+.pagination-item a {
+  /* Типографика */
+  color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  /* Типографика */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item-current {
+  /* Типографика */
+  color: #323232;
+  /* Оформление */
+  background-color: #ffffff;
+}
+
+.pagination-left a {
+  /* Типографика */
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.main-footer {
+  /* Типографика */
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-social {
+  /* Типографика */
+  text-align: left;
+  list-style: none;
+}
+
+.social-btn {
+  /* Типографика */
+  color: #ffffff;
+}
+
+.footer-info {
+  /* Типографика */
+  list-style: none;
+}
+
+.footer-info a {
+  /* Типографика */
+  color: #ffffff;
+}
+
+.footer-item-bold {
+  /* Типографика */
+  font-weight: 700;
+}
+
+.footer-copyright {
+  /* Типографика */
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.footer-copyright a {
+  /* Типографика */
+  color: #ffffff;
+}
+
+.modal {
+  /* Типографика */
+  color: #323232;
+  /* Оформление */
+  background-color: #f8f7f4;
+  background-repeat: repeat;
+ }
+
+.login-form input {
+  /* Типографика */
+  font: inherit;
+  font-weight: 400;
+  color: #323232;
+  /* Оформление */
+  background-color: #ffffff;
+  border: 1px solid #d7d7d7;
+}
+
+.login-form input:focus {
+  /* Оформление */
+  border: 1px solid #92c1f1;
+}
+
+.login-password-info a {
+  /* Типографика */
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #323232;
+  text-decoration-line: underline;
+}
+
+.login-password-info a:hover,
+.login-password-info a:focus {
+  /* Типографика */
+  color: #e84d37;
+  text-decoration: underline #facdc5;
+}
+
+.search-form input {
+  /* Типографика */
+  font: inherit;
+  font-weight: 400;
+  color: #323232;
+  /* Оформление */
+  background-color: #ffffff;
+  border: 1px solid #d7d7d7;
+}
+
+.search-form input:focus {
+  /* Оформление */
+  border: 1px solid #92c1f1;
+}
+
+.modal-feedback-title {
+  /* Типографика */
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  /* Типографика */
+  font: inherit;
+  font-weight: 400;
+  color: #323232;
+  /* Оформление */
+  background-color: #ffffff;
+  border: 1px solid #d7d7d7;
+}
+
+.feedback-form input:focus {
+  /* Оформление */
+  border: 1px solid #92c1f1;
+}
+
+.basket-list {
+  /* Типографика */
+  list-style: none;
+}
+
+.basket-item {
+  /* Типографика */
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
+}
+
+.basket-item a {
+  /* Типографика */
+  color: #323232;
+}
+
+.basket-item span {
+  /* Типографика */
+  color: #a4a4a4;
+}
+
+.basket-list-price {
+  /* Типографика */
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #323232;
+}
