@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/outline.css" rel="stylesheet">
   </head>
+
   <body>
+
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation container">
         <a href="index.html">
           <img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип «Gllasy Shop»">
         </a>
         <ul class="site-navigation">
           <li>
-            <a class="underline-white-light" href="catalog.html">Каталог</a>
-            <ul class="site-navigation-dropdown">
+            <a class="site-navigation-current" href="catalog.html">Каталог</a>
+            <ul class="site-navigation-dropdown" hidden>
               <li><a href="#">Новинки</a></li>
               <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
@@ -24,8 +28,8 @@
               <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a class="underline-white-light" href="#">Доставка и оплата</a></li>
-          <li><a class="underline-white-light" href="#">О компании</a></li>
+          <li class="white-underline"><a href="#">Доставка и оплата</a></li>
+          <li class="white-underline"><a href="#">О компании</a></li>
         </ul>
         <p class="user-navigation">
           <a class="search-link" href="find.html">Найти</a>
@@ -33,24 +37,29 @@
           <a class="basket-link" href="basket.html">Корзина</a>
         </p>
       </nav>
-      <p class="meta-header">
+      <p class="meta-header container">
         <span class="meta-header-time">C 10 до 20, ежедневно</span><br>
         <span class="meta-header-phone">8 812 450-25-25</span>
       </p>
     </header>
+
     <main class="container">
-      <h1 class="page-title">Сливочное мороженое</h1>
-      <ul class="breadcrumbs">
-        <li class="underline-red-light"><a class="underline-white-light" href="index.html">Главная</a></li>
-        <li class="underline-red-light"><a class="underline-white-light" href="#">Каталог</a></li>
-        <li class="breadcrumbs-current">Сливочное</li>
-      </ul>
+
+      <div class="breadcrumbs-menu">
+        <h1 class="page-title">Сливочное мороженое</h1>
+        <ul class="breadcrumbs">
+          <li class="white-underline red-underline"><a href="index.html">Главная</a></li>
+          <li class="white-underline red-underline"><a href="#">Каталог</a></li>
+          <li class="breadcrumbs-current">Сливочное</li>
+        </ul>
+      </div>
+
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset>
             <legend>Сортировка:</legend>
-            <div class="filter-option">
+            <div class="first-filter">
               <select name="sorting">
                 <option value="popular" selected>по популярности</option>
                 <option value="down">сначала недорогие</option>
@@ -60,14 +69,14 @@
             </div>
           </fieldset>
           <fieldset>
-            <div class="filter-option">
-              <legend>Цена: 100 руб. - 500 руб.</legend>
+            <legend>Цена: 100 руб. - 500 руб.</legend>
+            <div class="filter-option second-filter">
               <input class="filter-input-range" type="range" min="100" max="500" step="50"> <!-- Как делать два ползунка пока не знаю -->
             </div>
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>
-            <ul>
+            <ul class="third-filter">
               <li class="filter-option">
                 <input class="visually-hidden filter-input-radio" id="filter-0" type="radio" name="fat-group">
                 <label for="filter-0">0%</label>
@@ -88,7 +97,7 @@
           </fieldset>
           <fieldset>
             <legend>Наполнители:</legend>
-            <ul>
+            <ul class="fourth-filter">
               <li class="filter-option">
                 <input class="visually-hidden filter-input-checkbox" id="filter-chocolate" type="checkbox" name="chocolate" checked>
                 <label for="filter-chocolate">шоколадные</label>
@@ -114,11 +123,12 @@
           <button class="filter-btn" type="submit">Применить</button>
         </form>
       </section>
+
       <section class="catalog">
           <h2 class="visually-hidden">Каталог</h2>
           <ul class="catalog-list">
-            <li class="catalog-item underline-red-light">
-              <a class="underline-white-light" href="#">
+            <li class="catalog-item white-underline red-underline">
+              <a href="#">
                 <h3 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                 <p>
                   <img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -129,8 +139,8 @@
                 <span>/кг</span>
               </p>
             </li>
-            <li class="catalog-item underline-red-light">
-              <a class="underline-white-light" href="#">
+            <li class="catalog-item white-underline red-underline">
+              <a href="#">
                 <h3 class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</h3>
                 <p class="catalog-item-image">
                   <img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -141,8 +151,8 @@
                 <span>/кг</span>
               </p>
             </li>
-            <li class="catalog-item underline-red-light">
-              <a class="underline-white-light" href="#">
+            <li class="catalog-item white-underline red-underline">
+              <a href="#">
                 <h3 class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
                 <p class="catalog-item-image">
                   <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -153,8 +163,8 @@
                 <span>/кг</span>
               </p>
             </li>
-            <li class="catalog-item underline-red-light">
-              <a class="underline-white-light" href="#">
+            <li class="catalog-item white-underline red-underline">
+              <a href="#">
                 <h3 class="catalog-item-title">Сливочное крем-брюле с карамельной подливкой</h3>
                 <p class="catalog-item-image">
                   <img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -165,8 +175,8 @@
                 <span>/кг</span>
               </p>
             </li>
-            <li class="catalog-item underline-red-light">
-              <a class="underline-white-light" href="#">
+            <li class="catalog-item white-underline red-underline">
+              <a href="#">
                 <h3 class="catalog-item-title">Сливочное с брусничным джемом</h3>
                 <p class="catalog-item-image">
                   <img src="img/product-5.png" width="267" height="267" alt="Сливочное с брусничным джемом">
@@ -177,8 +187,8 @@
                 <span>/кг</span>
               </p>
             </li>
-            <li class="catalog-item underline-red-light">
-              <a class="underline-white-light" href="#">
+            <li class="catalog-item white-underline red-underline">
+              <a href="#">
                 <h3 class="catalog-item-title">Сливочно-черничное с цельными ягодами черники</h3>
                 <p class="catalog-item-image">
                   <img src="img/product-6.png" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
@@ -189,8 +199,8 @@
                 <span>/кг</span>
               </p>
             </li>
-            <li class="catalog-item underline-red-light">
-              <a class="underline-white-light" href="#">
+            <li class="catalog-item white-underline red-underline">
+              <a href="#">
                 <h3 class="catalog-item-title">Сливочно-лимонное с карамельной присыпкой</h3>
                 <p class="catalog-item-image">
                   <img src="img/product-7.png" width="267" height="267" alt="ССливочно-лимонное с карамельной присыпкой">
@@ -201,8 +211,8 @@
                 <span>/кг</span>
               </p>
             </li>
-            <li class="catalog-item underline-red-light">
-              <a class="underline-white-light" href="#">
+            <li class="catalog-item white-underline red-underline">
+              <a href="#">
                 <h3 class="catalog-item-title">Сливочное с шоколадной стружкой</h3>
                 <p class="catalog-item-image">
                   <img src="img/product-8.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
@@ -213,8 +223,8 @@
                 <span>/кг</span>
               </p>
             </li>
-            <li class="catalog-item underline-red-light">
-              <a class="underline-white-light" href="#">
+            <li class="catalog-item white-underline red-underline">
+              <a href="#">
                 <h3 class="catalog-item-title">Сливочно-ванильное с кусочками шоколада</h3>
                 <p class="catalog-item-image">
                   <img src="img/product-9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
@@ -225,8 +235,8 @@
                 <span>/кг</span>
               </p>
             </li>
-            <li class="catalog-item underline-red-light">
-              <a hclass="underline-white-light" ref="#">
+            <li class="catalog-item white-underline red-underline">
+              <a ref="#">
                 <h3 class="catalog-item-title">Сливочное с ментоловым сиропом</h3>
                 <p class="catalog-item-image">
                   <img src="img/product-10.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
@@ -237,8 +247,8 @@
                 <span>/кг</span>
               </p>
             </li>
-            <li class="catalog-item underline-red-light">
-              <a class="underline-white-light" href="#">
+            <li class="catalog-item white-underline red-underline">
+              <a href="#">
                 <h3 class="catalog-item-title">Сливочное с кусочками черного шоколада</h3>
                 <p class="catalog-item-image">
                   <img src="img/product-11.png" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
@@ -249,8 +259,8 @@
                 <span>/кг</span>
               </p>
             </li>
-            <li class="catalog-item underline-red-light">
-              <a class="underline-white-light" href="#">
+            <li class="catalog-item white-underline red-underline">
+              <a href="#">
                 <h3 class="catalog-item-title">Сливочное с мятным сиропом</h3>
                 <p class="catalog-item-image">
                   <img src="img/product-12.png" width="267" height="267" alt="Сливочное с мятным сиропом">
@@ -262,39 +272,43 @@
               </p>
             </li>
           </ul>
-          <ul class="pagination-list">
-            <li class="pagination-item pagination-left"><a href="#">&lt;</a></li>
-            <li class="pagination-item pagination-item-current">1</li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">4</a></li>
-            <li class="pagination-item"><a href="#">5</a></li>
-            <li class="pagination-item pagination-item-right"><a href="#">&gt;</a></li>
-          </ul>
+          <div class="pagination-position">
+            <ul class="pagination-list">
+              <li class="pagination-item pagination-left"><a href="#">&lt;</a></li>
+              <li class="pagination-item pagination-item-current">1</li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item"><a href="#">4</a></li>
+              <li class="pagination-item"><a href="#">5</a></li>
+              <li class="pagination-item pagination-right"><a href="#">&gt;</a></li>
+            </ul>
+          </div>
       </section>
+
    </main>
-   <footer class="main-footer">
+
+   <footer class="main-footer container">
         <ul class="footer-social">
-          <li><a class="social-btn" href="#">Твиттер</a></li>
-          <li><a class="social-btn" href="#">Инстаграм</a></li>
-          <li><a class="social-btn" href="#">Фейсбук</a></li>
-          <li><a class="social-btn" href="#">Вконтакте</a></li>
+          <li class="white-underline red-underline"><a class="social-btn" href="#">Твиттер</a></li>
+          <li class="white-underline red-underline"><a class="social-btn" href="#">Инстаграм</a></li>
+          <li class="white-underline red-underline"><a class="social-btn" href="#">Фейсбук</a></li>
+          <li class="white-underline red-underline"><a class="social-btn" href="#">Вконтакте</a></li>
         </ul>
         <ul class="footer-info">
-          <li class="footer-item-bold underline-red-light"><a class="underline-white-light"href="#">Для поставщиков</a></li>
-          <li class="underline-red-light"><a class="underline-white-light" href="#">О производстве</a></li>
-          <li class="underline-red-light"><a class="underline-white-light" href="#">Наши документы</a></li>
-          <li class="underline-red-light"><a class="underline-white-light" href="#">Экологические стандарты</a></li>
+          <li class="footer-item-bold white-underline red-underline"><a href="#">Для поставщиков</a></li>
+          <li class="white-underline red-underline"><a href="#">О производстве</a></li>
+          <li class="white-underline red-underline"><a href="#">Наши документы</a></li>
+          <li class="white-underline red-underline"><a href="#">Экологические стандарты</a></li>
         </ul>
       <p class="footer-copyright">
         <a class="icon-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        <span class="underline-red-light">Сделано в <a class="underline-white-light" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</span>
+        <span class="white-underline red-underline">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</span>
       </p>
     </footer>
 
     <!-- pop-up -->
 
-   <section class="modal modal-login">
+<!--   <section class="modal modal-login">
       <h2 class="visually-hidden">Личный кабинет</h2>
       <p class="visually-hidden">Введите свой логин и пароль</p>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -319,7 +333,7 @@
         <h2 class="visually-hidden">Строка поиска</h2>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
           <label class="visually-hidden" for="search-field">Найти</label>
-          <input class="search-field" id="search-field" type="search" name="search" placeholder="Крем-брюле">
+          <input class="search-field" id="search-field" type="text" name="search" placeholder="Крем-брюле">
         </form>
       </p>
     </section>
@@ -365,7 +379,8 @@
         <span class="basket-list-price">Итого: 750 руб.</span>
       </p>
       <button class="btn" type="submit">Оформить заказ</button>
-    </section>
+    </section> -->
 
   </body>
+
 </html>

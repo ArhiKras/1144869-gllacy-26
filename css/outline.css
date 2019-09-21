@@ -1,0 +1,99 @@
+
+.main-header {
+  outline: 2px solid green;
+  background-color: rgba(21, 230, 84, 0.164);
+}
+
+.main-header-logo,
+.site-navigation,
+.user-navigation {
+  outline: 2px solid yellow;
+  background-color: rgba(243, 247, 6, 0.164);
+}
+
+.meta-header {
+  outline: 2px solid blue;
+  background-color: rgba(27, 30, 219, 0.164);
+}
+
+.promo {
+  outline: 2px solid green;
+  background-color: rgba(21, 230, 84, 0.164);
+}
+
+.promo-item {
+  outline: 2px solid yellow;
+  background-color: rgba(243, 247, 6, 0.164);
+}
+
+.catalog {
+  outline: 2px solid green;
+  background-color: rgba(21, 230, 84, 0.164);
+}
+
+.catalog-item {
+  outline: 2px solid yellow;
+  background-color: rgba(243, 247, 6, 0.164);
+}
+
+.features {
+  outline: 2px solid green;
+  background-color: rgba(21, 230, 84, 0.164);
+}
+
+.feature-item {
+  outline: 2px solid yellow;
+  background-color: rgba(243, 247, 6, 0.164);
+}
+
+.main-info {
+  outline: 2px solid green;
+  background-color: rgba(21, 230, 84, 0.164);
+}
+
+.preview,
+.modal-subscribe {
+  outline: 2px solid yellow;
+  background-color: rgba(243, 247, 6, 0.164);
+}
+
+.container {
+  outline: 2px solid rgb(255, 0, 212);
+  background-color: rgba(247, 6, 207, 0.164);
+}
+
+.main-footer {
+  outline: 2px solid green;
+  background-color: rgba(21, 230, 84, 0.164);
+}
+
+.footer-social,
+.footer-info,
+.footer-copyright {
+  outline: 2px solid yellow;
+  background-color: rgba(243, 247, 6, 0.164);
+}
+
+.page-title,
+.breadcrumbs {
+  outline: 2px solid yellow;
+  background-color: rgba(243, 247, 6, 0.164);
+}
+
+.filters {
+  outline: 2px solid rgb(255, 51, 0);
+  background-color: rgba(247, 6, 6, 0.164);
+}
+
+.first-filter,
+.second-filter,
+.third-filter,
+.fourth-filter {
+  outline: 2px solid rgb(25, 0, 255);
+  background-color: rgba(22, 6, 247, 0.164);
+}
+
+.pagination-list {
+  outline: 2px solid rgb(25, 0, 255);
+  background-color: rgba(22, 6, 247, 0.164);
+}
