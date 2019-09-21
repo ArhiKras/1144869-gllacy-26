@@ -845,35 +845,3 @@ select {
   color: #323232;
 }
 
-
-/* СЕТКА */
-
-
-
-
-
-
-
-
-.pagination-list {
-  box-sizing: border-box;
-  display: inline-flex;
-  margin: 0;
-  margin-top: 80px;
-  margin-bottom: 30px;
-  padding: 0;
-  padding-top: 6px;
-
-  list-style: none;
-
-  /* Временно для сетки */
-  min-height: 26px;
-}
-
-.pagination-list li:not(:first-child) {
-  margin-left: 10px;
-}
-
-.pagination-position {
-  text-align: right;
-}
