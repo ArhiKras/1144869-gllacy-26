@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="19px" viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>entrance</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index" transform="translate(-985.000000, -29.000000)" fill="#FFFFFF">
+            <g id="Шапка" transform="translate(27.000000, 9.000000)">
+                <g id="Вход" transform="translate(941.000000, 12.000000)">
+                    <g id="entrance" transform="translate(17.000000, 8.000000)">
+                        <g id="Shape">
+                            <polygon fill-rule="nonzero" points="7 14.875 13.917 9.5 7 4.125 7 7.042 0.958 7.042 0.958 11.959 7 11.959"></polygon>
+                            <path d="M19,0 L6,0 C4.9,0 4,0.9 4,2 L4,4 L6,4 L6,2 L19,2 L19,17 L6,17 L6,15 L4,15 L4,17 C4,18.1 4.9,19 6,19 L19,19 C20.1,19 21,18.1 21,17 L21,2 C21,0.9 20.1,0 19,0 Z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

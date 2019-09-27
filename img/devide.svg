@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128px" height="1px" viewBox="0 0 128 1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Разделитель copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="8" y="40" width="128" height="1" id="rect-1"></rect>
+    </defs>
+    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.2">
+        <g transform="translate(-642.000000, -320.000000)" id="Шапка.Главное-меню">
+            <g>
+                <g id="Выпадающий-список">
+                    <g id="Выпадающий-список-наведение" transform="translate(634.000000, 280.000000)">
+                        <g id="Разделитель-copy">
+                            <image x="8" y="40" width="128" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAAABCAYAAAAW0qa2AAAAAXNSR0IArs4c6QAAABNJREFUKBVjNDU1/c8wCkZsCAAAPJMBoGlUmxkAAAAASUVORK5CYII="></image>
+                            <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -4,10 +4,10 @@
     <title>icon-down-dir</title>
     <desc>Created with Sketch.</desc>
     <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g transform="translate(-529.000000, -2275.000000)" fill="#FFFFFF" fill-rule="nonzero" id="Фильтры,-пагинатор,-соцкнопки">
+        <g transform="translate(-529.000000, -2331.000000)" fill="#000000" fill-rule="nonzero" id="Фильтры,-пагинатор,-соцкнопки">
             <g transform="translate(73.000000, 2238.000000)">
-                <g id="Сортировка" transform="translate(287.000000, 0.000000)">
-                    <g id="icon-down-dir" transform="translate(169.000000, 37.000000)">
+                <g id="Сортировка-наведение" transform="translate(287.000000, 78.000000)">
+                    <g id="icon-down-dir" transform="translate(169.000000, 15.000000)">
                         <polyline id="Shape" points="5.5 10 0 0 11 0"></polyline>
                     </g>
                 </g>
