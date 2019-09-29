@@ -36,13 +36,49 @@
             <li><a class="white-underline" href="#">Доставка и оплата</a></li>
             <li><a class="white-underline" href="#">О компании</a></li>
           </ul>
-          <p class="user-navigation">
-            <a class="search-link" href="find.html">
-              <span class="visually-hidden">Найти</span>
-            </a>
-            <a class="login-link" href="login.html">Вход</a>
-            <a class="basket-link" href="basket.html">Пусто</a>
-          </p>
+          <ul class="user-navigation">
+            <li class="popup-position">
+              <a class="search-link" href="search.html">
+                <span class="visually-hidden">Найти</span>
+              </a>
+              <div class="modal modal-search">
+                  <h2 class="visually-hidden">Строка поиска</h2>
+                  <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+                    <label class="visually-hidden" for="search-field">Найти</label>
+                    <input class="search-field" id="search-field" type="text" name="search" placeholder="Крем-брюле">
+                  </form>
+                  </div>
+            </li>
+            <li class="popup-position">
+              <a class="login-link" href="login.html">
+                <span>Вход</span>
+              </a>
+              <div class="modal modal-login">
+                  <h2 class="visually-hidden">Личный кабинет</h2>
+                  <p class="visually-hidden">Введите свой логин и пароль</p>
+                  <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+                    <p>
+                      <label class="visually-hidden" for="user-login">Логин</label>
+                      <input class="login-field-user" id="user-login" type="email" name="login" placeholder="email@example.com">
+                    </p>
+                    <p>
+                      <label class="visually-hidden" for="user-password">Пароль</label>
+                      <input class="login-field-password" id="user-password" type="password" name="password" placeholder="********">
+                    </p>
+                    <p class="login-password-info">
+                      <a href="#">Забыли пароль?</a><br>
+                      <a href="#">Новая регистрация</a>
+                    </p>
+                    <button class="btn" type="button">Войти</button>
+                  </form>
+                </div>
+            </li>
+            <li>
+              <a class="basket-link-empty" href="basket.html">
+                <span>Пусто</span>
+              </a>
+            </li>
+        </ul>
         </nav>
         <p class="meta-header container">
           <span class="meta-header-time">С 10 до 20, ежедневно</span><br>
@@ -291,37 +327,7 @@
 
       <!-- pop-up -->
 
-<!--     <section class="modal modal-login">
-        <h2 class="visually-hidden">Личный кабинет</h2>
-        <p class="visually-hidden">Введите свой логин и пароль</p>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-          <p>
-            <label class="visually-hidden" for="user-login">Логин</label>
-            <input class="login-field-user" id="user-login" type="email" name="login" placeholder="email@example.com">
-          </p>
-          <p>
-            <label class="visually-hidden" for="user-password">Пароль</label>
-            <input class="login-field-password" id="user-password" type="password" name="password" placeholder="********">
-          </p>
-          <p class="login-password-info">
-            <a href="#">Забыли пароль?</a><br>
-            <a href="#">Новая регистрация</a>
-          </p>
-          <button class="btn" type="button">Войти</button>
-        </form>
-      </section>
-
-      <section class="modal modal-search">
-        <p>
-          <h2 class="visually-hidden">Строка поиска</h2>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
-            <label class="visually-hidden" for="search-field">Найти</label>
-            <input class="search-field" id="search-field" type="text" name="search" placeholder="Крем-брюле">
-          </form>
-        </p>
-      </section>
-
-      <section class="modal modal-feedback">
+<!--      <section class="modal modal-feedback">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <p class="modal-feedback-title">Мы обязательно вам ответим!</p>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -339,29 +345,7 @@
           </p>
           <button class="btn" type="submit">Отправить</button>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
-       <br>
-      <section class="modal modal-basket">
-        <h2 class="visually-hidden">Корзина</h2>
-        <ul class="basket-list">
-          <li class="basket-item">
-            <img src="img/product-1.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p>Пломбир с апельсиновым джемом</p>
-            <p class="basket-item-price">1,5 кг х <span>200 руб.</span></p>
-            <p>300 руб.</p>
-          </li>
-          <li class="basket-item">
-            <img src="img/product-3.png" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <p>Клубничный пломбир с присыпкой из белого шоколада</p>
-            <p class="basket-item-price">1,5 кг х <span>300 руб.</span></p>
-            <p>450 руб.</p>
-          </li>
-        </ul>
-        <p>
-          <span class="basket-list-price">Итого: 750 руб.</span>
-        </p>
-        <button class="btn" type="submit">Оформить заказ</button>
+        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
       </section> -->
 
     </div>

@@ -1,4 +1,9 @@
 
+.site-wrapper {
+  outline: 2px solid rgb(5, 7, 5);
+  background-color: rgb(6, 8, 1);
+}
+
 .main-header {
   outline: 2px solid green;
   background-color: rgba(21, 230, 84, 0.164);
