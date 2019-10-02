@@ -26,7 +26,7 @@
             <li>
               <a class="white-underline" href="catalog.html">Каталог</a>
                 <ul class="site-navigation-dropdown">
-                  <li><a class="dropdown-title" href="#">Новинки</a></li>
+                  <li class="dropdown-title">Новинки</li>
                   <li><a href="catalog.html">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
                   <li><a href="#">Фруктовый лед</a></li>
@@ -34,7 +34,7 @@
                 </ul>
             </li>
             <li><a class="white-underline" href="#">Доставка и оплата</a></li>
-            <li><a class="white-underline" href="#">О компании</a></li>
+            <li><a class="white-underline" href="#">О Компании</a></li>
           </ul>
           <ul class="user-navigation">
             <li class="popup-position">
@@ -66,10 +66,10 @@
                       <input class="login-field-password" id="user-password" type="password" name="password" placeholder="********">
                     </p>
                     <p class="login-password-info">
-                      <a href="#">Забыли пароль?</a><br>
+                      <a href="#">Забыли пароль?</a>
                       <a href="#">Новая регистрация</a>
                     </p>
-                    <button class="btn" type="button">Войти</button>
+                    <button class="btn" type="submit">Войти</button>
                   </form>
                 </div>
             </li>
@@ -135,7 +135,8 @@
                 <img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </a>
               <p class="catalog-item-price">
-                <b>310 ₽</b>
+                <b>310</b>
+                <b class="price-ruble">₽</b>
                 <span>/кг</span>
               </p>
               <a class="btn" href="#">Быстрый просмотр</a>
@@ -146,7 +147,8 @@
                 <img src="img/product-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               </a>
               <p class="catalog-item-price">
-                <b>380 ₽</b>
+                <b>380</b>
+                <b class="price-ruble">₽</b>
                 <span>/кг</span>
               </p>
               <a class="btn" href="#">Быстрый просмотр</a>
@@ -157,7 +159,8 @@
                 <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </a>
               <p class="catalog-item-price">
-                <b>355 ₽</b>
+                <b>355</b>
+                <b class="price-ruble">₽</b>
                 <span>/кг</span>
               </p>
               <a class="btn" href="#">Быстрый просмотр</a>
@@ -168,7 +171,8 @@
                 <img src="img/product-4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               </a>
               <p class="catalog-item-price">
-                <b>415 ₽</b>
+                <b>415</b>
+                <b class="price-ruble">₽</b>
                 <span>/кг</span>
               </p>
               <a class="btn" href="#">Быстрый просмотр</a>
@@ -178,10 +182,10 @@
 
         <section class="features">
           <h2 class="visually-hidden">О нас</h2>
-          <p class="features-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+          <p class="features-title">Магазин Глэйси  &mdash; это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
           <ul class="features-list">
             <li class="feature-item feature-icon-first">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
-            <li class="feature-item feature-icon-second">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+            <li class="feature-item feature-icon-second">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
             <li class="feature-item feature-icon-third">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
             <li class="feature-item feature-icon-fourth">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.  </li>
           </ul>
@@ -203,7 +207,7 @@
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
               <form class="subscribe-form" action="https://echo.html.academy.ru" method="POST">
                 <label class="visually-hidden" for="subscription-field">Адрес рассылки</label>
-                <input class="subscribe-field-user" id="subscription-field" type="text" name="subscription" placeholder="email@example.ru">
+                <input class="subscribe-field-user" id="subscription-field" type="text" name="subscription" placeholder="email@example.com">
                 <button class="btn" type="submit">Отправить</button>
               </form>
             </p>
@@ -218,8 +222,8 @@
             <p class="modal-map-contacts">
               Адрес главного офиса<br>
               и офлайн магазина:<br>
-              <span>ул.Большая Конюшенная</span><br>
-              <span>19/8, Санкт-петербург</span>
+              <span>ул. Большая Конюшенная</span><br>
+              <span>19/8, Санкт-Петербург</span>
             </p>
             <p class="modal-map-contacts">Для заказов по телефону:<br>
             <span>8 812 450-25-25</span><br>
@@ -325,30 +329,31 @@
         </p>
       </footer>
 
-      <!-- pop-up -->
-
-<!--      <section class="modal modal-feedback">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-        <p class="modal-feedback-title">Мы обязательно вам ответим!</p>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
-          <p>
-            <label class="visually-hidden" for="feedback-name">Имя</label>
-            <input class="feedback-field-user" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label class="visually-hidden" for="feedback-email">Электронная почта</label>
-            <input class="feedback-field-user" id="feedback-email" type="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label class="visually-hidden" for="feedback-comments">Комментарии</label>
-            <textarea class="feedback-field-comments" id="feedback-comments" name="comments" placeholder="В свободной форме"></textarea>
-          </p>
-          <button class="btn" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      </section> -->
-
     </div>
+
+    <!-- pop-up -->
+      <div class="modal-wrapper">
+        <section class="modal modal-feedback">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <p class="modal-feedback-title">Мы обязательно вам ответим!</p>
+          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+              <label class="visually-hidden" for="feedback-name">Имя</label>
+              <input class="feedback-field-user" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label class="visually-hidden" for="feedback-email">Электронная почта</label>
+              <input class="feedback-field-user" id="feedback-email" type="email" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label class="visually-hidden" for="feedback-comments">Комментарии</label>
+              <textarea class="feedback-field-comments" id="feedback-comments" name="comments" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+          <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        </section>
+      </div>
 
   </body>
 
