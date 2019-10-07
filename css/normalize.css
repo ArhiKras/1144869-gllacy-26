@@ -347,3 +347,11 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+ * Убрать select IE 11.
+ */
+
+select::-ms-expand {
+    display: none;
+}

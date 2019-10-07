@@ -197,8 +197,8 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -832,6 +832,7 @@ a {
   -webkit-box-flex: 0;
   max-width: 560px;
   min-height: 229px;
+  margin: 0;
   margin-bottom: 26px;
 
   border-radius: 15px;
@@ -866,6 +867,8 @@ a {
 }
 
 .raspberry-item {
+  margin-right: 26px; /* especially for IE11 */
+
   background-color: #849d8f;
   background-image: url("../img/raspberries.png");
   background-repeat: no-repeat;
@@ -950,6 +953,8 @@ a {
 }
 
 .catalog-item a:not(.btn) {
+  width: 267px; /* especially for IE11 */
+
   font-weight: 500;
   font-size: 14px;
   line-height: 22px;
