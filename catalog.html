@@ -39,7 +39,7 @@
             <h2 class="visually-hidden">Строка поиска</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
               <label class="visually-hidden" for="search-field">Найти</label>
-              <input class="search-field" id="search-field" type="text" name="search" placeholder="Крем-брюле">
+              <input class="search-field" id="search-field" type="text" name="search" placeholder="Крем-брюле" required>
             </form>
           </div>
         </li>
@@ -53,13 +53,11 @@
             <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
               <p>
                 <label class="visually-hidden" for="user-login">Логин</label>
-                <input class="login-field-user" id="user-login" type="email" name="login"
-                  placeholder="email@example.com">
+                <input class="login-field-user" id="user-login" type="email" name="login" placeholder="email@example.com" required>
               </p>
               <p>
                 <label class="visually-hidden" for="user-password">Пароль</label>
-                <input class="login-field-password" id="user-password" type="password" name="password"
-                  placeholder="********">
+                <input class="login-field-password" id="user-password" type="password" name="password" placeholder="********" required>
               </p>
               <p class="login-password-info">
                 <a href="#">Забыли пароль?</a><br>
@@ -77,15 +75,13 @@
             <h2 class="visually-hidden">Корзина</h2>
             <ul class="basket-list">
               <li class="basket-item">
-                <img src="img/product-1.png" width="33" height="33"
-                  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/product-1.png" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <p class="basket-title">Пломбир с апельсиновым джемом</p>
                 <p class="basket-item-price">1,5 кг х <span>200 руб.</span></p>
                 <p>300 руб.</p>
               </li>
               <li class="basket-item">
-                <img src="img/product-3.png" width="33" height="33"
-                  alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                <img src="img/product-3.png" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 <p class="basket-title">Клубничный пломбир с присыпкой из белого шоколада</p>
                 <p class="basket-item-price">1,5 кг х <span>300 руб.</span></p>
                 <p>450 руб.</p>
@@ -197,8 +193,7 @@
         <li class="catalog-item">
           <a class="item-order white-underline red-underline" href="#">
             <h3 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-            <img src="img/product-1.png" width="267" height="267"
-              alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           </a>
           <p class="catalog-item-price">
             <b>310</b>
@@ -222,8 +217,7 @@
         <li class="catalog-item">
           <a class="item-order white-underline red-underline" href="#">
             <h3 class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <img src="img/product-3.png" width="267" height="267"
-              alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           </a>
           <p class="catalog-item-price">
             <b>355</b>
@@ -359,8 +353,7 @@
   <footer class="main-footer footer-border container">
     <ul class="footer-social">
       <li><a class="social-btn" href="#"><span class="visually-hidden">Твиттер</span>
-          <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g transform="translate(-1208.000000, -2261.000000)" fill="#FFFFFF" id="social-button">
                 <g transform="translate(73.000000, 2238.000000)">
@@ -380,8 +373,7 @@
           </svg>
         </a></li>
       <li><a class="social-btn" href="#"><span class="visually-hidden">Инстаграм</span>
-          <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Pages-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g id="Catalog-1" transform="translate(-77.000000, -1579.000000)" fill="#FFFFFF">
                 <g id="Подвал-1" transform="translate(26.000000, 1540.000000)">
@@ -411,8 +403,7 @@
           </svg>
         </a></li>
       <li><a class="social-btn" href="#"><span class="visually-hidden">Фейсбук</span>
-          <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Pages-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g id="Catalog-2" transform="translate(-126.000000, -1579.000000)" fill="#FFFFFF">
                 <g id="Подвал-2" transform="translate(26.000000, 1540.000000)">
@@ -436,8 +427,7 @@
           </svg>
         </a></li>
       <li><a class="social-btn" href="#"><span class="visually-hidden">Вконтакте</span>
-          <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Pages-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g id="Catalog-3" transform="translate(-175.000000, -1579.000000)" fill="#FFFFFF">
                 <g id="Подвал-3" transform="translate(26.000000, 1540.000000)">
@@ -471,10 +461,8 @@
       <li><a class="white-underline red-underline" href="#">Экологические стандарты</a></li>
     </ul>
     <p class="footer-copyright">
-      <a class="icon-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML
-          Academy</span></a>
-      <span> Сделано в <a class="white-underline red-underline"
-          href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</span>
+      <a class="icon-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
+      <span> Сделано в <a class="white-underline red-underline" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</span>
     </p>
   </footer>
 

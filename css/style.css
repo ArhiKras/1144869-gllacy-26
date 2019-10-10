@@ -93,6 +93,7 @@ a {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
   background-image: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background-image:    linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border: none;
   border-radius: 50px;
   -webkit-box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
           box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -146,7 +147,7 @@ a {
 .main-header {
   width: 1200px;
   margin: 0 auto;
-  margin-bottom: 12px;
+  margin-bottom: 17px;
   padding-top: 9px;
 }
 
@@ -205,7 +206,7 @@ a {
   width: 400px;
   margin: 0;
   margin-top: 13px;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
   padding: 0;
 
   list-style: none;
@@ -493,7 +494,7 @@ a {
   -ms-flex-align: start;
   align-items: flex-start;
   width: 530px;
-  height: 230px;
+  min-height: 230px;
   padding: 6px 5px;
 
   background-color: #f8f7f4;
@@ -511,6 +512,7 @@ a {
 .basket-list {
   width: 520px;
   margin: 10px auto;
+  margin-bottom: 10px;
   padding: 0;
 
   list-style: none;
@@ -533,6 +535,7 @@ a {
   -ms-flex-align: start;
   align-items: flex-start;
   margin-right: 24px;
+  margin-bottom: 11px;
 
   font-weight: 400;
   font-size: 13px;
@@ -553,18 +556,15 @@ a {
   background-repeat: no-repeat;
 }
 
-.basket-item:first-child {
-  margin-bottom: 10px;
-}
-
 .basket-item:last-child {
-  margin-bottom: 4px;
+  margin-bottom: 17px;
 }
 
 .basket-item .basket-title {
       flex: 0 0 216px;
   -webkit-box-flex: 0;
   max-width: 216px;
+  margin-bottom: 0;
 
   -ms-flex: 0 0 216px;
 }
@@ -573,7 +573,14 @@ a {
   color: #a4a4a4;
 }
 
+.basket-item p:last-child {
+  max-width: 50px;
+
+  word-wrap: break-word;
+}
+
 .basket-item-price {
+  max-width: 95px;
   margin-right: 28px;
   margin-left: 31px;
 }
@@ -585,7 +592,7 @@ a {
 
 .basket-list-price {
   margin: 0;
-  padding: 0 0;
+  padding: 0;
 
   font-weight: 700;
   font-size: 15px;
@@ -603,6 +610,7 @@ a {
 
 .modal-basket .btn {
   margin-top: 14px;
+  margin-bottom: 14px;
   padding: 10px 15px;
 }
 
@@ -702,7 +710,7 @@ a {
 }
 
 .meta-header {
-  margin-bottom: 1px;
+  margin-top: -5px;
 
   text-align: right;
 }
@@ -722,8 +730,8 @@ a {
 .slider {
   position: relative;
 
-  margin-bottom: 40px;
-  padding-top: 262px;
+  margin-bottom: 41px;
+  padding-top: 257px;
 
   text-align: center;
   color: #ffffff;
@@ -925,7 +933,7 @@ a {
   -ms-flex-align: center;
   align-items: center;
   max-width: 267px;
-  max-height: 408px;
+  min-height: 392px;
   margin-bottom: -46px;
   padding: 8px 13px;
 
@@ -1010,7 +1018,7 @@ a {
 
 .catalog-item-price b {
   position: absolute;
-  bottom: 162px;
+  top: 232px;
   left: 12px;
 
   font-size: 45px;
@@ -1018,13 +1026,13 @@ a {
 }
 
 .catalog-item-price .price-ruble {
-  bottom: 162px;
+  top: 232px;
   left: 94px;
 }
 
 .catalog-item-price span {
   position: absolute;
-  bottom: 158px;
+  top: 237px;
   left: 125px;
 
   font-size: 30px;
@@ -1263,6 +1271,7 @@ a {
 
 .subscribe-form {
   margin-left: 20px;
+  padding-bottom: 40px;
 }
 
 .subscribe-form input {
@@ -1501,7 +1510,7 @@ a {
 
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 36px;
+  min-height: 36px;
   margin: 0;
   padding: 0;
 
@@ -1516,18 +1525,25 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 702px;
 }
 
 .filter-option {
   display: inline-block;
+  margin-bottom: 5px;
   margin-left: 45px;
   padding-top: 8px;
 
   vertical-align: top;
+}
+
+.checkbox-filter .filter-option:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-option label {
@@ -1683,10 +1699,8 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 144px;
-  height: 36px;
-  margin-top: auto;
-  margin-right: 10px;
-  margin-left: auto;
+  min-height: 36px;
+  margin-top: 35px;
 
   font-weight: 500;
   font-size: 16px;

@@ -43,7 +43,7 @@
               <h2 class="visually-hidden">Строка поиска</h2>
               <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
                 <label class="visually-hidden" for="search-field">Найти</label>
-                <input class="search-field" id="search-field" type="text" name="search" placeholder="Крем-брюле">
+                <input class="search-field" id="search-field" type="text" name="search" placeholder="Крем-брюле" required>
               </form>
             </div>
           </li>
@@ -57,13 +57,11 @@
               <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
                 <p>
                   <label class="visually-hidden" for="user-login">Логин</label>
-                  <input class="login-field-user" id="user-login" type="email" name="login"
-                    placeholder="email@example.com">
+                  <input class="login-field-user" id="user-login" type="email" name="login" placeholder="email@example.com" required>
                 </p>
                 <p>
                   <label class="visually-hidden" for="user-password">Пароль</label>
-                  <input class="login-field-password" id="user-password" type="password" name="password"
-                    placeholder="********">
+                  <input class="login-field-password" id="user-password" type="password" name="password" placeholder="********" required>
                 </p>
                 <p class="login-password-info">
                   <a href="#">Забыли пароль?</a>
@@ -132,8 +130,7 @@
           <li class="catalog-item">
             <a class="item-order item-hit white-underline red-underline" href="#">
               <h3 class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-              <img src="img/product-1.png" width="267" height="267"
-                alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <img src="img/product-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             </a>
             <p class="catalog-item-price">
               <b>310</b>
@@ -157,8 +154,7 @@
           <li class="catalog-item">
             <a class="item-order item-hit white-underline red-underline" href="#">
               <h3 class="catalog-item-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-              <img src="img/product-3.png" width="267" height="267"
-                alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <img src="img/product-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </a>
             <p class="catalog-item-price">
               <b>355</b>
@@ -184,18 +180,12 @@
 
       <section class="features">
         <h2 class="visually-hidden">О нас</h2>
-        <p class="features-title">Магазин Глэйси &mdash; это онлайн- и офлайн-магазин по продаже мороженого собственного
-          производства на развес</p>
+        <p class="features-title">Магазин Глэйси &mdash; это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul class="features-list">
-          <li class="feature-item feature-icon-first">Все наше мороженое изготавливается на собственном производстве, с
-            использованием современного оборудования и проверенных временем технологий.</li>
-          <li class="feature-item feature-icon-second">Закупка ингредиентов производится только у проверенных фермерских
-            хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-          <li class="feature-item feature-icon-third">Для приготовления мороженого используются настоящие сливки и
-            молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,
-            экологически чистого сырья.</li>
-          <li class="feature-item feature-icon-fourth">Доставка нашего мороженого до заказчиков осуществляется в
-            специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.  
+          <li class="feature-item feature-icon-first">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+          <li class="feature-item feature-icon-second">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="feature-item feature-icon-third">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+          <li class="feature-item feature-icon-fourth">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.  
           </li>
         </ul>
         <span></span>
@@ -212,12 +202,10 @@
 
         <section class="modal modal-subscribe">
             <h2 class="visually-hidden">Форма подписки</h2>
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-              Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe-form" action="https://echo.html.academy.ru" method="POST">
               <label class="visually-hidden" for="subscription-field">Адрес рассылки</label>
-              <input class="subscribe-field-user" id="subscription-field" type="text" name="subscription"
-                placeholder="email@example.com">
+              <input class="subscribe-field-user" id="subscription-field" type="text" name="subscription" placeholder="email@example.com" required>
               <button class="btn" type="submit">Отправить</button>
             </form>
         </section>
@@ -226,11 +214,8 @@
 
       <section class="modal-map">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-          width="1200" height="430" allowfullscreen></iframe>
-        <img src="img/map.jpg" width="1200" height="430"
-          alt="Адрес главного офиса и офлайн магазина ул.Большая Конюшенная 19/8, Санкт-Петербург">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1200" height="430" allowfullscreen></iframe>
+        <img src="img/map.jpg" width="1200" height="430" alt="Адрес главного офиса и офлайн магазина ул.Большая Конюшенная 19/8, Санкт-Петербург">
         <div class="modal-map-columns">
           <p class="modal-map-contacts">
             Адрес главного офиса<br>
@@ -251,8 +236,7 @@
     <footer class="main-footer container">
       <ul class="footer-social">
         <li><a class="social-btn" href="#"><span class="visually-hidden">Твиттер</span>
-            <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g transform="translate(-1208.000000, -2261.000000)" fill="#FFFFFF" id="social-button">
                   <g transform="translate(73.000000, 2238.000000)">
@@ -272,8 +256,7 @@
             </svg>
           </a></li>
         <li><a class="social-btn" href="#"><span class="visually-hidden">Инстаграм</span>
-            <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="one" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Catalog-1" transform="translate(-77.000000, -1579.000000)" fill="#FFFFFF">
                   <g id="Подвал-1" transform="translate(26.000000, 1540.000000)">
@@ -303,8 +286,7 @@
             </svg>
           </a></li>
         <li><a class="social-btn" href="#"><span class="visually-hidden">Фейсбук</span>
-            <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="Pages-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Catalog-2" transform="translate(-126.000000, -1579.000000)" fill="#FFFFFF">
                   <g id="Подвал-2" transform="translate(26.000000, 1540.000000)">
@@ -328,8 +310,7 @@
             </svg>
           </a></li>
         <li><a class="social-btn" href="#"><span class="visually-hidden">Вконтакте</span>
-            <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="Pages-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                 <g id="Catalo-3" transform="translate(-175.000000, -1579.000000)" fill="#FFFFFF">
                   <g id="Подвал-3" transform="translate(26.000000, 1540.000000)">
@@ -363,10 +344,8 @@
         <li><a class="white-underline red-underline" href="#">Экологические стандарты</a></li>
       </ul>
       <p class="footer-copyright">
-        <a class="icon-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML
-            Academy</span></a>
-        <span> Сделано в <a class="white-underline red-underline"
-            href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</span>
+        <a class="icon-link" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span></a>
+        <span> Сделано в <a class="white-underline red-underline" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2019</span>
       </p>
     </footer>
 
@@ -381,17 +360,15 @@
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
       <p>
         <label class="visually-hidden" for="feedback-name">Имя</label>
-        <input class="feedback-field-user" id="feedback-name" type="text" name="first-name" placeholder="Имя Фамилия">
+        <input class="feedback-field-user" id="feedback-name" type="text" name="first-name" placeholder="Имя Фамилия" required>
       </p>
       <p>
         <label class="visually-hidden" for="feedback-email">Электронная почта</label>
-        <input class="feedback-field-user" id="feedback-email" type="email" name="email"
-          placeholder="email@example.com">
+        <input class="feedback-field-user" id="feedback-email" type="email" name="email" placeholder="email@example.com" required>
       </p>
       <p>
         <label class="visually-hidden" for="feedback-comments">Комментарии</label>
-        <textarea class="feedback-field-comments" id="feedback-comments" name="comments"
-          placeholder="В свободной форме"></textarea>
+        <textarea class="feedback-field-comments" id="feedback-comments" name="comments" placeholder="В свободной форме"></textarea>
       </p>
       <button class="btn" type="submit">Отправить</button>
     </form>

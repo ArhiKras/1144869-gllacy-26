@@ -47,7 +47,7 @@ overlay.addEventListener("click", function (evt) {
   popup.classList.remove("modal-show");
   popup.classList.remove("modal-error");
   overlay.classList.remove("show-overlay");
-})
+});
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
