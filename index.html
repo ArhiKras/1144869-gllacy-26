@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
         </ul>
         <ul class="user-navigation">
           <li class="popup-position">
-            <a class="search-link" href="search.html">
+            <a class="search-link" href="#">
               <span class="visually-hidden">Найти</span>
             </a>
             <div class="modal modal-search">
@@ -48,7 +48,7 @@
             </div>
           </li>
           <li class="popup-position">
-            <a class="login-link" href="login.html">
+            <a class="login-link" href="#">
               <span>Вход</span>
             </a>
             <div class="modal modal-login">
@@ -72,14 +72,14 @@
             </div>
           </li>
           <li>
-            <a class="basket-link-empty" href="basket.html">
+            <a class="basket-link-empty" href="#">
               <span>Пусто</span>
             </a>
           </li>
         </ul>
       </nav>
       <p class="meta-header container">
-        <span class="meta-header-time">С 10 до 20, ежедневно</span><br>
+        <span class="meta-header-time">С 10 до 20, ежедневно</span>
         <span class="meta-header-phone">8 812 450-25-25</span>
       </p>
     </header>
@@ -220,8 +220,7 @@
           <p class="modal-map-contacts">
             Адрес главного офиса<br>
             и офлайн магазина:<br>
-            <span>ул. Большая Конюшенная</span><br>
-            <span>19/8, Санкт-Петербург</span>
+            <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
           </p>
           <p class="modal-map-contacts">Для заказов по телефону:<br>
             <span>8 812 450-25-25</span><br>
@@ -360,11 +359,11 @@
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
       <p>
         <label class="visually-hidden" for="feedback-name">Имя</label>
-        <input class="feedback-field-user" id="feedback-name" type="text" name="first-name" placeholder="Имя Фамилия" required>
+        <input class="feedback-field-user" id="feedback-name" type="text" name="first-name" placeholder="Имя Фамилия">
       </p>
       <p>
         <label class="visually-hidden" for="feedback-email">Электронная почта</label>
-        <input class="feedback-field-user" id="feedback-email" type="email" name="email" placeholder="email@example.com" required>
+        <input class="feedback-field-user" id="feedback-email" type="email" name="email" placeholder="email@example.com">
       </p>
       <p>
         <label class="visually-hidden" for="feedback-comments">Комментарии</label>
